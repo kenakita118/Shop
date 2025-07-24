@@ -8,16 +8,26 @@
 
 :root {
     --main-text-color: rgb(0, 0, 0);
-    --secondary-text-color: rgb(181, 181, 181);
+    --secondary-text-color: rgb(193, 193, 193);
 
     --main--bg-color: rgb(255, 255, 255);
 
     --light-orange: rgb(214, 126, 74);
-    --yellow: rgb(213, 170, 31);
+    --light-yellow: rgb(242, 234, 209);
+    --yellow: rgb(239, 191, 31);
+    --dark-yellow: rgb(174, 124, 7);
+
+}
+
+body {
+    background-color: var(--main--bg-color);
+    color: var(--main-text-color);
+    font-family: "DM Serif Text", serif;
 }
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -29,9 +39,18 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: var(--main--bg-color);
-    color: var(--main-text-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol {
+    margin: 0;
 }
 
 img {
@@ -43,16 +62,26 @@ img {
 
 /* Start of Header */
 
+header {
+    background-color: var(--light-yellow);
+}
+
 header nav {
     display: flex;
     align-items: center;
-    padding: 0 1rem 0 1rem;
+    justify-content: space-between;
+    padding: .5rem 5rem;
 }
 
 .header__links {
     display: flex;
     gap: 1.5rem;
-    margin-left: auto;
+
+}
+
+.header__links a:hover, .header__links .active {
+    color: var(--dark-yellow);
+    transition: color .5s;
 }
 
 .header__logo {
@@ -68,10 +97,50 @@ header nav {
 
 /* Start of Body */
 
+.top {
+    display: flex;
+    background-image: url(img/coffee/coffee-background.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.textbox {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.coffee-image-carousel img {
+    height: 750px;
+}
+
 /* End of Body */
 
 /* Start of Footer */
+footer {
+    background-color: var(--light-yellow);
+}
+
+footer nav {
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 100px;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-left: auto;
+}
+
 .footer__links img{
-    max-width: 50px;
+    max-height: 20px;
 }
 /* End of Footer */
