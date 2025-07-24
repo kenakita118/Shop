@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll("nav ul li a");
 
-    console.log(navLinks);
-    console.log(`Hi ${currentPath}`);
     navLinks.forEach(link => {
     // Compare href with current path
     if (link.getAttribute("href") === currentPath) {

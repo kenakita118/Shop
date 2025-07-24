@@ -8,15 +8,13 @@
 
 :root {
     --main-text-color: rgb(0, 0, 0);
-    --secondary-text-color: rgb(193, 193, 193);
+    --secondary-text-color: rgb(255, 255, 255);
 
     --main--bg-color: rgb(255, 255, 255);
 
     --brown: rgb(101, 65, 44);
     --light-yellow: rgb(242, 234, 209);
     --light-brown: rgb(241, 213, 188);
-    --dark-yellow: rgb(174, 124, 7);
-
 }
 
 body {
@@ -104,104 +102,6 @@ header nav {
 
 /* End of Header */
 
-/* Start of Body */
-
-section.top {
-    height: 750px;
-    background-image: url(img/coffee/coffee-background.webp);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    filter: blur();
-}
-
-.top__container {
-    gap: 1rem;
-    padding: 0 3rem;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.top__textbox {
-    color: white;
-}
-
-.textbox__title {
-    font-size: 3rem;
-}
-
-.textbox__description {
-    font-size: 1.5rem;
-}
-
-.textbox__img {
-    object-fit: cover;
-    max-height: 400px;
-    width: auto;
-    border: 2px solid white;
-    border-radius: 70px;
-}
-
-@media only screen and (max-width: 725px) {
-    .top__container {
-        flex-direction: column;
-    }
-}
-
-section.body {
-    margin-bottom: 2rem;
-}
-
-.coffee-image-carousel img {
-    height: 750px;
-}
-
-section.bottom {
-    background-color: var(--brown);
-    padding: 3rem 10%;
-}
-
-.bottom__title {
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.bottom-card {
-    display: flex;
-    align-items: center;
-    background-color: var(--light-brown);
-    border-radius: 8px;
-    padding: 5rem 2rem;
-}
-
-.bottom__description {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.bottom-card__img {
-    margin-top: 1rem;
-    max-width: 450px;
-    width: 100%;
-    height: auto;
-}
-
-@media only screen and (max-width: 1200px) {
-    .bottom-card {
-        flex-direction: column;
-    }
-}
-
-/* End of Body */
 
 /* Start of Footer */
 footer {
