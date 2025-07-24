@@ -1,8 +1,8 @@
 const footer = document.createElement('footer');
 footer.innerHTML = `
     <nav class="shadow-sm mt-5">
-        <a href="index.html" class="footer__logo">
-            <img src="../img/logo/man.webp" alt="PHD">
+        <a href="index.html">
+            <img class="footer__logo" src="../img/logo/man.webp" alt="PHD">
         </a>
         <ul class="footer__links">
             <li>

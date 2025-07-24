@@ -26,78 +26,110 @@
 
         <main>
             <section class="top">
-                <div class="textbox">
-                    <h1>Welcome to this page</h1>
+                    <div class="top__container">
+                        <div class="top__textbox">
+                            <h1 class="textbox__title">Welcome to John's Coffee</h1>
+                            <p class="textbox__description">Here we go.</p>
+                        </div>
+                        <img class="textbox__img" src="../img/coffee/john.jpeg">
+                    </div>
+                    
+                
+            </section>
+
+            <section class="body">
+                <div class="coffee-image-carousel">
+                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li
+                                data-bs-target="#carouselId"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="First slide"
+                            ></li>
+                            <li
+                                data-bs-target="#carouselId"
+                                data-bs-slide-to="1"
+                                aria-label="Second slide"
+                            ></li>
+                            <li
+                                data-bs-target="#carouselId"
+                                data-bs-slide-to="2"
+                                aria-label="Third slide"
+                            ></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img
+                                    src="../img/carousel/carousel_image_1.JPG"
+                                    class="w-100 d-block img-fliud"
+                                    alt="First slide"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="../img/carousel/carousel_image_2.JPG"
+                                    class="w-100 d-block img-fliud"
+                                    alt="Second slide"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="../img/carousel/carousel_image_3.JPG"
+                                    class="w-100 d-block img-fliud"
+                                    alt="Third slide"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselId"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselId"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </section>
 
+            <section class="bottom">
+                <div class="bottom__container">
+                    <h1 class="bottom__title">
+                    High Quality Coffee
+                    </h1>
+                    <div class="bottom__description">
+                        <div class="bottom-card">
+                            <div class="bottom-card__text">
+                                <h2>Made in California</h2>
+                                <p>Look at this hard-working farmer. He lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum placeat, maxime officiis vero soluta voluptas, doloremque dolorum aliquam non ipsum quaerat. Est tenetur sapiente dignissimos, ipsa illum fugiat officia?</p>
+                            </div>
+                            <img class="bottom-card__img" src="../img/coffee/farmer.jpeg">
+                        </div>
 
-            
-            <div class="coffee-image-carousel px-5">
-                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li
-                            data-bs-target="#carouselId"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="First slide"
-                        ></li>
-                        <li
-                            data-bs-target="#carouselId"
-                            data-bs-slide-to="1"
-                            aria-label="Second slide"
-                        ></li>
-                        <li
-                            data-bs-target="#carouselId"
-                            data-bs-slide-to="2"
-                            aria-label="Third slide"
-                        ></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img
-                                src="../img/carousel/carousel_image_1.JPG"
-                                class="w-100 d-block img-fliud"
-                                alt="First slide"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="../img/carousel/carousel_image_2.JPG"
-                                class="w-100 d-block img-fliud"
-                                alt="Second slide"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="../img/carousel/carousel_image_3.JPG"
-                                class="w-100 d-block img-fliud"
-                                alt="Third slide"
-                            />
+                        <div class="bottom-card">
+                            <div class="bottom-card__text">
+                                <h2>Nice and Fresh</h2>
+                                <p>Our coffee beans are made with kindness and beauty in mind. They are capital G Good. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, itaque ex aperiam, porro voluptatum est consequuntur animi accusantium reiciendis doloremque rem vitae laboriosam optio impedit adipisci officia? Debitis, ullam officiis!</p>
+                            </div>
+                            <img class="bottom-card__img" src="../img/coffee/jungle.webp">
                         </div>
                     </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselId"
-                        data-bs-slide="prev"
-                    >
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselId"
-                        data-bs-slide="next"
-                    >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    
                 </div>
-                
-            </div>
+            </section>
+            
         </main>
 
         <script src="../footer.js"></script>
