@@ -1,7 +1,7 @@
 /* Start of Body */
 
 section.top {
-    height: 750px;
+    height: 80vh;
     background-image: url(../img/coffee/coffee-background.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,11 +60,11 @@ section.body {
 
 section.bottom {
     background-color: var(--brown);
-    padding: 3rem 10%;
 }
 
 .bottom__title {
     color: var(--secondary-text-color);
+    text-align: center;
     margin-bottom: 1rem;
 }
 

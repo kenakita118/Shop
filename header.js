@@ -1,9 +1,15 @@
 const header = document.createElement('header');
 header.innerHTML = `
-    <nav class="shadow-sm mb-5">
-        <a class="header__logo" href="index.html">
-            <h1>John's Coffee</h1>
-        </a>
+    <nav class="shadow-sm mb-5 px-1 px-md-2 px-lg-5">
+        <div class="header__logo_and_button">
+            <a class="header__logo_container" href="index.html">
+                <img class="header__logo" src="/img/logo/logo_JohnsCoffee.png" alt="John's Coffee">
+            </a>
+
+            <div class="nav-toggle">
+                <i id="navToggleBtn"class="menu-icon fa-solid fa-bars"></i>
+            </div>
+        </div>
 
         <ul class="header__links">
             <li><a href="/pages/index.html">Home</a></li>
@@ -27,4 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 document.body.append(header);
+
+// Responsive Navbar Toggle Button
+
+const navToggleBtn = document.getElementById('navToggleBtn')
+
+navToggleBtn.onclick = function () {
+    document.querySelector('.header__links').classList.toggle('show');
+}
 

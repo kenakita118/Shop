@@ -11,6 +11,8 @@
     --secondary-text-color: rgb(255, 255, 255);
 
     --main--bg-color: rgb(255, 255, 255);
+    --secondary--bg-color: rgb(245, 245, 245);
+    --main--bg-color-shadow: rgb(230, 230, 230);
 
     --brown: rgb(101, 65, 44);
     --light-yellow: rgb(242, 234, 209);
@@ -67,22 +69,62 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: .5rem 5rem;
+    transition: all 1s;
+}
+
+.header__logo_and_button {
+    display: flex;
 }
 
 .header__links {
     display: flex;
     gap: 1.5rem;
+    margin-left: auto;
+}
+
+.nav-toggle {
+    display: none;
+    color: var(--brown);
 }
 
 @media only screen and (max-width: 750px) {
-    header nav{
-        display: block;
+    header nav {
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .header__logo_container {
+        align-items: inherit;
     }
 
     .header__links {
+        /*
+        display: none;
+        margin: auto;
+        */
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        margin: auto;
+    }
+
+    .header__links.show {
+        /*
+        display: flex;
+        flex-direction: column;;
+        */
+
+        flex-direction: column;
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-toggle {
         display: block;
+        margin-left: auto;
     }
 }
 
@@ -109,13 +151,12 @@ footer {
 }
 
 footer nav {
-    padding: 2rem 6rem;
     display: flex;
     align-items: center;
 }
 
 .footer__logo {
-    max-width: 100px;
+    max-width: 250px;
     align-items: center;
 }
 
@@ -133,9 +174,13 @@ footer nav {
 }
 
 @media only screen and (max-width: 750px) {
-    footer nav{
-        padding: 2rem;
-        display: block;
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__links {
+        margin: 0;
     }
 }
 /* End of Footer */
