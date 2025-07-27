@@ -17,34 +17,36 @@
             crossorigin="anonymous"
         />
 
-        <!--Custom CSS-->
-        <link href="../css/header_and_footer.css" rel="stylesheet">
-        <link href="../css/index.css" rel="stylesheet">
+        <!-- Icon -->
 
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
-        
+
+        <!--Custom CSS-->
+        <link href="../css/root.css" rel="stylesheet">
+        <link href="../css/header_and_footer.css" rel="stylesheet">
+        <link href="../css/index.css" rel="stylesheet">
+
     </head>
 
     <body>
         <script src="../header.js"></script>
-
         <main>
-            <section class="top">
-                    <div class="top__container">
-                        <div class="top__textbox">
-                            <h1 class="textbox__title">Welcome to John's Coffee</h1>
-                            <p class="textbox__description">Here we go.</p>
-                        </div>
-                        <img class="textbox__img" src="../img/coffee/john.jpeg">
+            <section class="top margin-bottom-5rem">
+                <div class="top__container">
+                    <div class="top__textbox text-white">
+                        <h1 class="textbox__title">Welcome to John's Coffee</h1>
+                        <p class="textbox__description">Here we go.</p>
                     </div>
-                    
-                
+                </div>
             </section>
 
-            <section class="body">
+            <section class="body margin-bottom-5rem">
+                <div class="body__title">
+                    <h1 class="mb-3 text-center">Photo Gallery</h1>
+                </div>
                 <div class="coffee-image-carousel">
                     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                         <ol class="carousel-indicators">
@@ -111,10 +113,10 @@
                 </div>
             </section>
 
-            <section class="bottom">
+            <section class="high-quality-coffee bottom margin-bottom-5rem">
                 <div class="bottom__container p-2 p-md-5">
                     <h1 class="bottom__title">
-                    High Quality Coffee
+                High Quality Coffee
                     </h1>
                     <div class="bottom__description">
                         <div class="bottom-card">
@@ -133,8 +135,12 @@
                             <img class="bottom-card__img" src="../img/coffee/jungle.webp">
                         </div>
                     </div>
-                    
                 </div>
+            </section>
+
+            <section class="customer-reviews" id="customer-reviews">
+                <h1 class="text-center mb-3">Customer Reviews</h1>
+                <script src="../customer-reviews.js"></script>
             </section>
             
         </main>

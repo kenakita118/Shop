@@ -1,6 +1,6 @@
 const header = document.createElement('header');
 header.innerHTML = `
-    <nav class="shadow-sm mb-5 px-1 px-md-2 px-lg-5">
+    <nav class="shadow-sm mb-5 px-1 p-md-3">
         <div class="header__logo_and_button">
             <a class="header__logo_container" href="index.html">
                 <img class="header__logo" src="/img/logo/logo_JohnsCoffee.png" alt="John's Coffee">

@@ -74,20 +74,11 @@ products.forEach(({ name, slug, desc, price, image }) => {
         <p class="item__price">${price}</p>
         <div class="item__buttons">
             <button class="item__Btn addBtn" id="addBtn-${slug}" data-id="${slug}"> + </button>
-            <p id="item__countDisplay-${slug}"> 0 </p>
+            <span class="item__count" id="item__countDisplay-${slug}"> 0 </span>
             <button class="item__Btn removeBtn" id="removeBtn-${slug}" data-id="${slug}"> - </button>
         </div>
     </div>
     `;
-    /*
-    <div class="item__content py-2 shadow-sm">
-        <img src="${image}" alt="${name}"/>
-        <h2 class="item__title">${name}</h2>
-        <p class="item__desc">${desc}</p>
-        <p class="item__price">${price}</p>
-        <button class="item__addBtn">Add to cart</button>
-    </div>
-    */
     products_grid.appendChild(item);
 });
 
@@ -110,6 +101,9 @@ document.querySelectorAll('.addBtn').forEach(button => {
 document.querySelectorAll('.removeBtn').forEach(button => {
   button.addEventListener('click', () => {
     const slug = button.dataset.id;
+    if (cartCounts[slug]==0) {
+        return;
+    }
     cartCounts[slug]--;
     document.getElementById(`item__countDisplay-${slug}`).innerText = cartCounts[slug];
     console.log(`${slug} removed. Count: ${cartCounts[slug]}`);
