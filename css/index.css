@@ -31,15 +31,18 @@ section.top {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 590px) {
     .top__container {
-        flex-direction: column;
+        padding: 5px;
+    }
+    .textbox__title {
+        font-size: 2.5rem;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .top__container {
-        padding: 0;
+@media only screen and (max-width: 420px) {
+    .textbox__title {
+        font-size: 2rem;
     }
 }
 
@@ -59,7 +62,7 @@ section.customer-reviews {
 
 .reviews_grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto auto;
     gap: 1rem;
 }
@@ -67,13 +70,17 @@ section.customer-reviews {
 .review {
     background-color: var(--color-light-grey);
 
-    gap: 25px;
+    gap: 20px;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 20px;;
     
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 4;
+}
+
+.review h2 {
+    font-size: 1.6rem;
 }
 
 .review img {
@@ -85,6 +92,11 @@ section.customer-reviews {
     margin: auto;
 }
 
+@media only screen and (max-width: 980px) {
+    .reviews_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media only screen and (max-width: 600px) {
     .reviews_grid {
         display: block;
